@@ -19,6 +19,10 @@ body {
   min-height: 100vh;
 }
 
+.logo h1 {
+  color: #fff;
+}
+
 /* Cabeçalho */
 .principal {
   background: linear-gradient(to bottom, #001f3f, #003366);
