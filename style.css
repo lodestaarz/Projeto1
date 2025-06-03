@@ -108,3 +108,17 @@ footer {
   margin: 0 auto;
   padding: 0 1rem;
 }
+
+.imagem-sobre {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.imagem-sobre img {
+  max-width: 100%;
+  width: 300px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px #00c0ff;
+  border: 3px solid #00c0ff;
+}
