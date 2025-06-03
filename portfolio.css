@@ -12,6 +12,12 @@ html, body {
   color: white;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 /* Cabeçalho */
 .principal {
   background: linear-gradient(to bottom, #001f3f, #003366);
@@ -30,6 +36,11 @@ html, body {
   flex-wrap: wrap;
 }
 
+.logo h1 {
+  font-size: 1.5rem;
+}
+
+/* Botões do menu */
 .botao {
   display: inline-block;
   padding: 0.8rem 1.5rem;
@@ -48,30 +59,21 @@ html, body {
 
 /* Conteúdo principal */
 main.secundaria {
+  background-color: #000;
   padding: 4rem 2rem;
+  flex-grow: 1;
   width: 100%;
-  display: block; /* garantir que não haja herança indesejada de flex */
 }
 
-/* Texto da seção */
+/* Seção sobre */
 .sobre {
   max-width: 1200px;
-  margin: 0 auto 2rem;
+  width: 100%;
+  margin: 0 auto 2rem auto;
   color: #ccc;
+  text-align: center;
 }
 
-.texto-sobre h3 {
-  font-size: 2rem;
-  color: #00c0ff;
-  margin-bottom: 0.5rem;
-}
-
-.texto-sobre p {
-  font-size: 1.1rem;
-  color: #ccc;
-}
-
-/* Produtos */
 .produtos {
   max-width: 1200px;
   margin: 0 auto;
@@ -81,6 +83,7 @@ main.secundaria {
   justify-content: center;
 }
 
+/* Card */
 .card {
   background-color: #111;
   padding: 1.5rem;
@@ -97,7 +100,8 @@ main.secundaria {
 
 .card img {
   width: 100px;
-  height: auto;
+  height: 100px;
+  object-fit: contain;
   border-radius: 12px;
   margin-bottom: 1rem;
 }
@@ -118,7 +122,7 @@ footer {
   color: #ccc;
   text-align: center;
   padding: 1.5rem;
-  margin-top: 2rem;
+  margin-top: auto;
   width: 100%;
 }
 
@@ -128,7 +132,7 @@ footer .container {
   padding: 0 1rem;
 }
 
-/* Cor personalizada */
+/* Azul personalizado */
 .azul {
   color: #00c0ff;
 }
