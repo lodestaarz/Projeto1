@@ -1,1 +1,39 @@
+.produtos {
+  max-width: 1200px;
+  margin: 2rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
 
+.card {
+  background-color: #111;
+  padding: 1.5rem;
+  border-radius: 15px;
+  text-align: center;
+  width: 200px;
+  box-shadow: 0 0 15px #00c0ff33;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100px;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.card h4 {
+  color: #00c0ff;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  color: #ccc;
+  font-size: 0.95rem;
+}
