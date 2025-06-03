@@ -1,24 +1,31 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #fff;
-  color: white;
+/* Reset básico e altura total */
+html, body {
+  height: 100%;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: white;
 }
 
-.azul {
-  color: #00c0ff;
+/* Layout flex para o body garantir footer no final */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
+/* Cabeçalho */
 .principal {
   background: linear-gradient(to bottom, #001f3f, #003366);
   padding: 2rem;
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
+/* Container interno topo */
 .topo {
   width: 100%;
   max-width: 1200px;
@@ -28,6 +35,7 @@ body {
   flex-wrap: wrap;
 }
 
+/* Botões do menu */
 .botao {
   display: inline-block;
   padding: 0.8rem 1.5rem;
@@ -44,14 +52,18 @@ body {
   background-color: #00a6dd;
 }
 
-.secundaria {
+/* Conteúdo principal - cresce e ocupa o espaço restante */
+main.secundaria {
   background-color: #000;
   padding: 4rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-grow: 1;  /* Faz o main crescer para ocupar o espaço */
+  width: 100%;
 }
 
+/* Seção sobre */
 .sobre {
   max-width: 1200px;
   width: 100%;
@@ -63,6 +75,7 @@ body {
   margin-bottom: 3rem;
 }
 
+/* Texto dentro da seção sobre */
 .texto-sobre {
   max-width: 600px;
   color: #ccc;
@@ -79,33 +92,19 @@ body {
   line-height: 1.6;
 }
 
-.imagem-sobre img {
-  max-width: 300px;
-  border-radius: 20px;
-  box-shadow: 0 0 15px #00c0ff;
-  border: 3px solid #00c0ff;
-}
-
+/* Footer */
 footer {
   background-color: #001f3f;
   color: #ccc;
   text-align: center;
   padding: 1.5rem;
-  margin-top: auto;
+  margin-top: auto; /* empurra o footer para o final da página */
+  width: 100%;
 }
 
+/* Container dentro do footer */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
-}
-
-.principal {
-  background: linear-gradient(to bottom, #001f3f, #003366);
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 4rem 2rem;
 }
