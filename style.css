@@ -39,7 +39,7 @@ body {
 .botao {
   display: inline-block;
   padding: 0.8rem 1.5rem;
-  background-color: #00c0ff;
+  background-color: #00ff1a;
   color: #000;
   text-decoration: none;
   border-radius: 12px;
@@ -49,7 +49,7 @@ body {
 }
 
 .botao:hover {
-  background-color: #00a6dd;
+  background-color: #00dd12;
 }
 
 /* Conteúdo principal - cresce e ocupa o espaço restante */
@@ -84,7 +84,7 @@ main.secundaria {
 .texto-sobre h3 {
   font-size: 2.2rem;
   margin-bottom: 1rem;
-  color: #00c0ff;
+  color: #26ff00;
 }
 
 .texto-sobre p {
@@ -94,7 +94,7 @@ main.secundaria {
 
 /* Footer */
 footer {
-  background-color: #001f3f;
+  background-color: #163f00;
   color: #ccc;
   text-align: center;
   padding: 1.5rem;
