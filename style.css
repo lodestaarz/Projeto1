@@ -1,15 +1,18 @@
-/* Reset básico e altura total */
-html, body {
-  height: 100%;
+/* Reset e configurações globais */
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
   font-family: Arial, sans-serif;
   background-color: #fff;
   color: white;
 }
 
-/* Layout flex para o body garantir footer no final */
+/* Layout principal com flex para empurrar o footer */
 body {
   display: flex;
   flex-direction: column;
@@ -20,12 +23,12 @@ body {
 .principal {
   background: linear-gradient(to bottom, #001f3f, #003366);
   padding: 2rem;
+  width: 100%;
   display: flex;
   justify-content: center;
-  width: 100%;
 }
 
-/* Container interno topo */
+/* Container interno do cabeçalho */
 .topo {
   width: 100%;
   max-width: 1200px;
@@ -52,31 +55,30 @@ body {
   background-color: #00a6dd;
 }
 
-/* Conteúdo principal - cresce e ocupa o espaço restante */
+/* Conteúdo principal */
 main.secundaria {
   background-color: #000;
   padding: 4rem 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-grow: 1;  /* Faz o main crescer para ocupar o espaço */
+  flex-grow: 1;
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-/* Seção sobre */
+/* Seção sobre com texto à esquerda e imagem à direita */
 .sobre {
+  max-width: 1200px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 0 auto;
   gap: 2rem;
 }
 
-/* Texto dentro da seção sobre */
+/* Texto da seção */
 .texto-sobre {
-  max-width: 600px;
+  flex: 1;
   color: #ccc;
 }
 
@@ -91,23 +93,7 @@ main.secundaria {
   line-height: 1.6;
 }
 
-/* Footer */
-footer {
-  background-color: #001f3f;
-  color: #ccc;
-  text-align: center;
-  padding: 1.5rem;
-  margin-top: auto; /* empurra o footer para o final da página */
-  width: 100%;
-}
-
-/* Container dentro do footer */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-
+/* Imagem à direita da seção */
 .imagem-sobre {
   flex: 1;
   display: flex;
@@ -115,9 +101,31 @@ footer {
 }
 
 .imagem-sobre img {
-  max-width: 100%;
   width: 300px;
+  max-width: 100%;
   border-radius: 20px;
-  box-shadow: 0 0 15px #00c0ff;
   border: 3px solid #00c0ff;
+  box-shadow: 0 0 15px #00c0ff;
+}
+
+/* Rodapé */
+footer {
+  background-color: #001f3f;
+  color: #ccc;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: auto;
+  width: 100%;
+}
+
+/* Container do rodapé */
+footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Cor azul personalizada */
+.azul {
+  color: #00c0ff;
 }
