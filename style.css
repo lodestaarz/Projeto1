@@ -65,14 +65,13 @@ main.secundaria {
 
 /* Seção sobre */
 .sobre {
-  max-width: 1200px;
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
   gap: 2rem;
-  margin-bottom: 3rem;
 }
 
 /* Texto dentro da seção sobre */
