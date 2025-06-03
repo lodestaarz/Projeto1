@@ -101,12 +101,13 @@ main.secundaria {
 }
 
 .imagem-sobre img {
-  width: 350px;
+  width: 400px;
   max-width: 100%;
   border-radius: 20px;
   border: 3px solid #00c0ff;
   box-shadow: 0 0 15px #00c0ff;
-  height: auto;
+  height: 250x875;
+  alt: 45x45;
 }
 
 /* Rodapé */
