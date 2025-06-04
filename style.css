@@ -18,8 +18,21 @@ body {
   min-height: 100vh;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo img {
+  width: 50px; /* tamanho pequeno para a logo */
+  height: 50px;
+  object-fit: contain;
+}
+
 .logo h1 {
-  color: white;
+  color: #00c0ff;
+  font-size: 1.8rem;
 }
 
 /* Cabeçalho */
@@ -116,55 +129,4 @@ footer .container {
   color: #00c0ff;
 }
 
-.botoes-fixos {
-  position: fixed;
-  bottom: 60px; /* 60px acima do footer (que tem 1.5rem padding) */
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 1rem;
-  z-index: 1000;
-}
-
-/* Estilo base dos botões fixos */
-.botao-fixo {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: #00c0ff;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  transition: background-color 0.3s;
-  cursor: pointer;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 60%;
-}
-
-/* Hover nos botões */
-.botao-fixo:hover {
-  background-color: #00a6dd;
-}
-
-/* Ícone WhatsApp (usando SVG em base64 para evitar dependência externa) */
-.botao-fixo.whatsapp {
-  background-image: url('data:image/svg+xml;utf8,<svg fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.52 3.48A11.94 11.94 0 0012 0C5.373 0 0 5.373 0 12a11.936 11.936 0 001.89 6.19L0 24l5.81-1.89A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12 0-3.188-1.246-6.188-3.48-8.52zm-8.48 16.35c-2.626 0-5.038-1.132-6.74-2.84l-.48-.48 2.3-6.79.03-.05a7.497 7.497 0 0113.25 6.9 7.5 7.5 0 01-7.12 3.27zm4.45-5.44c-.24-.12-1.42-.7-1.64-.78-.22-.07-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.15-.28.18-.52.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.44-1.34-1.68-.14-.24-.015-.37.11-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.07-.12-.54-1.3-.74-1.8-.2-.48-.4-.42-.54-.42-.14 0-.3-.02-.46-.02-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2 .002 1.18.86 2.32.98 2.48.12.16 1.7 2.6 4.12 3.64.58.25 1.03.4 1.38.52.58.18 1.1.15 1.52.09.46-.07 1.42-.58 1.62-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28z"/></svg>');
-}
-
-/* Ícone Instagram (usando SVG em base64 para evitar dependência externa) */
-.botao-fixo.instagram {
-  background-image: url('data:image/svg+xml;utf8,<svg fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5A4.25 4.25 0 007.75 20.5h8.5a4.25 4.25 0 004.25-4.25v-8.5A4.25 4.25 0 0016.25 3.5h-8.5zm8.5 2a1 1 0 110 2 1 1 0 010-2zm-4.25 1.5a4.75 4.75 0 110 9.5 4.75 4.75 0 010-9.5zm0 1.5a3.25 3.25 0 100 6.5 3.25 3.25 0 000-6.5z"/></svg>');
-}
-
-/* Estilo para logo com imagem */
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.logo img {
-  width: 50px;
-  height: 50px;
-  object-fit: contain;
-}
+/* Estilo para logo com imagem ajustado acima */
