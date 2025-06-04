@@ -20,7 +20,7 @@ body {
 }
 
 /* Cabeçalho */
-.principal {
+#principal {
   background: linear-gradient(to bottom, #001f3f, #003366);
   padding: 2rem;
   width: 100%;
@@ -29,7 +29,7 @@ body {
 }
 
 /* Container interno do cabeçalho */
-.topo {
+#topo {
   width: 100%;
   max-width: 1200px;
   display: flex;
@@ -38,14 +38,14 @@ body {
   flex-wrap: wrap;
 }
 
-.logo {
+#logo {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
 
-.logo img {
+#logo img {
   position: absolute;
   left: 0;
   width: 250px;
@@ -53,7 +53,7 @@ body {
   z-index: 0;
 }
 
-.logo h1 {
+#logo h1 {
   color: white;
   font-size: 1.5rem;
   position: relative;
@@ -62,7 +62,7 @@ body {
 }
 
 /* Botões do menu */
-.botao {
+#botao {
   display: inline-block;
   padding: 0.8rem 1.5rem;
   background-color: #00c0ff;
@@ -74,11 +74,10 @@ body {
   margin: 0.5rem;
 }
 
-.botao:hover {
+#botao:hover {
   background-color: #00a6dd;
 }
 
-/* Conteúdo principal */
 main.secundaria {
   background-color: #000;
   padding: 4rem 2rem;
@@ -90,8 +89,8 @@ main.secundaria {
   align-items: center;
 }
 
-/* Seção sobre*/
-.sobre {
+
+#sobre {
   max-width: 1200px;
   width: 100%;
   display: flex;
@@ -101,33 +100,33 @@ main.secundaria {
   gap: 2rem;
 }
 
-.texto-sobre {
+#texto-sobre {
   flex: 1;
   color: #ccc;
 }
 
-.texto-sobre h3 {
+#texto-sobre h3 {
   font-size: 2.2rem;
   margin-bottom: 1rem;
   color: #00c0ff;
 }
 
-.texto-sobre p {
+#texto-sobre p {
   font-size: 1.2rem;
   line-height: 1.6;
 }
 
-.paragrafo-portfolio {
+#paragrafo-portfolio {
   margin-top: -30px;
 }
 
-.imagem-sobre {
+#imagem-sobre {
   flex: 1;
   display: flex;
   justify-content: flex-end;
 }
 
-.imagem-sobre img {
+#imagem-sobre img {
   width: 400px;
   max-width: 100%;
   border-radius: 20px;
@@ -136,7 +135,7 @@ main.secundaria {
   height: 250px;
 }
 
-/* Rodapé */
+/* Parte debaixo do site */
 footer {
   background-color: #001f3f;
   color: #ccc;
@@ -152,19 +151,19 @@ footer .container {
   padding: 0 1rem;
 }
 
-.azul {
+#azul {
   color: #00c0ff;
 }
 
-/* Botões finais */
-.botoes-finais {
+/* Botões das redes sociais */
+#botoes-finais {
   display: flex;
   justify-content: center;
   gap: 1.5rem;
   margin: 2rem 0;
 }
 
-.botao-final {
+#botao-final {
   background-color: #00c0ff;
   color: #000;
   padding: 0.8rem 1.5rem;
@@ -174,6 +173,6 @@ footer .container {
   transition: background-color 0.3s;
 }
 
-.botao-final:hover {
+#botao-final:hover {
   background-color: #009ccd;
 }
