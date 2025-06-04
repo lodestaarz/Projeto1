@@ -1,21 +1,30 @@
+Pular para o conteúdo
+Histórico de chats
+
+Você disse:
+vou mandar um html e quero que você faça com que tenha botões na parte inferior do site, loco acima o footer. Botoes que levam ao link de whatsapp e instagram da empresa. vou mandar o html e o css e quero qeu me devolva os dois corrigidos 
+O ChatGPT disse:
+Claro! Pode mandar o HTML e o CSS que você tem, que eu faço a alteração para incluir esses botões fixos na parte inferior, logo acima do footer, com links para o WhatsApp e Instagram da empresa.
+Fique à vontade para enviar.
+
+Você disse:
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ELEZY - compra de contas online</title>
+  <title>ELEZY - Garantia</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="principal">
     <div class="topo">
       <div class="logo">
-        <img src="logo.png" alt="Logo da ELEZY" />
         <h1 class="azul">ELEZY - Seu elo de forma mais easy</h1>
       </div>
       <nav>
-        <a class="botao" href="portfolio.html">Contas</a>
-        <a class="botao" href="quem-somos.html">Quem Somos</a>
+        <a class="botao" href="index.html">Apresentação</a>
+        <a class="botao" href="portfolio.html">Portfólio</a>
         <a class="botao" href="trabalhe-conosco.html">Trabalhe Conosco</a>
       </nav>
     </div>
@@ -24,15 +33,21 @@
   <main class="secundaria">
     <div class="sobre">
       <div class="texto-sobre">
-        <h3 class="azul">Apresentação</h3>
-        <p>Nossa plataforma é 100% segura. Utilizamos VPN e garantimos total sigilo em cada serviço prestado.</p>
-        <p>Todos os pedidos são acompanhados por suporte em tempo real via WhatsApp e e-mail.</p>
-        <p>Se o serviço não for entregue como combinado, garantimos reembolso integral.</p>
+        <h3 class="azul">Garantia e Segurança</h3>
+        <p>Somos uma equipe de profissionais especializados em serviços de elo job no League of Legends, com foco em segurança, agilidade e excelência.</p>
+        <p><strong>Email:</strong> vinicius.2005@alunos.utfpr.edu.br</p>
+        <p><strong>Instagram:</strong> @fariass.vini</p>
+        <p><strong>WhatsApp:</strong> (11)99999999</p>
       </div>
       <div class="imagem-sobre">
-        <img src="elos.png" alt="Elos" />
+        <img src="equipe.png" alt="Equipe ELEZY" />
       </div>
     </div>
+    <div class="redes-sociais">
+        <a class="botao-social" href="https://www.instagram.com/fariass.vin" target="_blank">Instagram</a>
+        <a class="botao-social" href="https://www.x.com/vldesatualizado" target="_blank">Twitter</a>
+        <a class="botao-social" href="https://wa.me/5599999999999" target="_blank">WhatsApp</a>
+</div>
   </main>
 
   <footer>
@@ -42,3 +57,198 @@
   </footer>
 </body>
 </html>
+O ChatGPT disse:
+Perfeito, agora só falta o CSS que você está usando para eu ajustar também, certo? Pode enviar o CSS que você tem para eu incluir os botões fixos abaixo do conteúdo, logo acima do footer, com links para WhatsApp e Instagram, e estilizar direitinho.
+
+Você disse:
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: white;
+}
+
+/* Layout principal com flex para empurrar o footer */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.logo h1 {
+  color: white;
+}
+
+/* Cabeçalho */
+.principal {
+  background: linear-gradient(to bottom, #001f3f, #003366);
+  padding: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Container interno do cabeçalho */
+.topo {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Botões do menu */
+.botao {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: #00c0ff;
+  color: #000;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  margin: 0.5rem;
+}
+
+.botao:hover {
+  background-color: #00a6dd;
+}
+
+/* Conteúdo principal */
+main.secundaria {
+  background-color: #000;
+  padding: 4rem 2rem;
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sobre {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.texto-sobre {
+  flex: 1;
+  color: #ccc;
+}
+
+.texto-sobre h3 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: #00c0ff;
+}
+
+.texto-sobre p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* Rodapé */
+footer {
+  background-color: #001f3f;
+  color: #ccc;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: auto;
+  width: 100%;
+}
+
+footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.azul {
+  color: #00c0ff;
+}
+
+/* Redes sociais */
+.redes-sociais {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 3rem auto 1rem;
+}
+
+.botao-social {
+  background-color: #00c0ff;
+  color: #000;
+  text-decoration: none;
+  padding: 0.7rem 1.4rem;
+  border-radius: 12px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.botao-social:hover {
+  background-color: #00a6dd;
+}
+
+/* Estilo para logo com imagem */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+O ChatGPT disse:
+Beleza! Vou adicionar os botões fixos na parte inferior, logo acima do footer, com links para WhatsApp e Instagram, e ajustar o CSS para isso.
+Segue o código atualizado:
+
+HTML corrigido
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ELEZY - Garantia</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="principal">
+    <div class="topo">
+      <div class="logo">
+        <h1 class="azul">ELEZY - Seu elo de forma mais easy</h1>
+      </div>
+      <nav>
+        <a class="botao" href="index.html">Apresentação</a>
+        <a class="botao" href="portfolio.html">Portfólio</a>
+        <a class="botao" href="trabalhe-conosco.html">Trabalhe Conosco</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="secundaria">
+    <div class="sobre">
+      <div class="texto-sobre">
+        <h3 class="azul">Garantia e Segurança</h3>
+        <p>Somos uma equipe de profissionais especializados em serviços de elo job no League of Legends, com foco em segurança, agilidade e excelência.</p>
+        <p><strong>Email:</strong> vinicius.2005@alunos.u
+
+
+
+Nenhum arquivo escolhidoNenhum arquivo escolhido
+O ChatGPT pode cometer erros. Considere verificar informações importantes.
+O ChatGPT ainda está gerando uma resposta…
