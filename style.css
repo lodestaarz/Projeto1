@@ -58,7 +58,7 @@ body {
   font-size: 1.5rem;
   position: relative;
   z-index: 1;
-  padding-left: 275px; /* espaço para a imagem no fundo */
+  padding-left: 220px; /* espaço para a imagem no fundo */
 }
 
 /* Botões do menu */
