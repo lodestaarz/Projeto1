@@ -38,28 +38,40 @@ body {
   flex-wrap: wrap;
 }
 
-.logo {
+.logo-container {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  gap: 1rem; /* espaçamento entre imagem e texto */
 }
 
-.logo img {
+/* Logo como imagem de fundo atrás do texto */
+.logo-img {
   position: absolute;
   left: 0;
-  width: 120px;
-  height: auto;
   opacity: 0.15;
+  width: 60px;
+  height: 60px;
   z-index: 0;
 }
 
-.logo h1 {
-  color: white;
-  font-size: 1.5rem;
+.logo-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Texto fica em cima da logo */
+.logo-text {
   position: relative;
   z-index: 1;
-  padding-left: 70px; /* espaço para a imagem no fundo */
+  padding-left: 70px; /* dá espaço para a imagem aparecer atrás */
+}
+
+.logo-text h1 {
+  margin: 0;
+  color: white;
+  font-size: 1.5rem;
 }
 
 /* Botões do menu */
