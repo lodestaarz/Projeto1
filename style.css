@@ -48,9 +48,8 @@ body {
 .logo img {
   position: absolute;
   left: 0;
-  width: 120px;
+  width: 250px;
   height: auto;
-  opacity: 0.15;
   z-index: 0;
 }
 
@@ -59,7 +58,7 @@ body {
   font-size: 1.5rem;
   position: relative;
   z-index: 1;
-  padding-left: 70px; /* espaço para a imagem no fundo */
+  padding-left: 150px; /* espaço para a imagem no fundo */
 }
 
 /* Botões do menu */
