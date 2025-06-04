@@ -47,6 +47,6 @@
   font-size: 0.95rem;
 }
 
-body.portfolio main.secundaria {
-  padding-top: 1rem; /* ou o valor desejado */
+.paragrafo-portfolio {
+  margin-top: -30px; /* Ajuste a altura conforme necessário */
 }
