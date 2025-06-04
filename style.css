@@ -162,3 +162,22 @@ footer .container {
   background-color: #009ccd;
 }  
 
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo img {
+  width: 40px; /* tamanho menor */
+  height: auto;
+  opacity: 1; /* visível normalmente */
+  position: static; /* remove posicionamento absoluto */
+  transform: none;
+  z-index: auto;
+}
+
+.logo h1 {
+  color: white;
+  font-size: 1.5rem;
+}
