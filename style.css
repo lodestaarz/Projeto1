@@ -19,20 +19,27 @@ body {
 }
 
 .logo {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
 .logo img {
-  width: 50px; /* tamanho pequeno para a logo */
-  height: 50px;
-  object-fit: contain;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  width: 80px;
+  height: auto;
+  opacity: 0.12;
+  z-index: 0;
 }
 
 .logo h1 {
-  color: #00c0ff;
-  font-size: 1.8rem;
+  position: relative;
+  z-index: 1;
+  color: white;
 }
 
 /* Cabeçalho */
@@ -83,6 +90,7 @@ main.secundaria {
   align-items: center;
 }
 
+/* Seção sobre com texto à esquerda e imagem à direita */
 .sobre {
   max-width: 1200px;
   width: 100%;
@@ -93,6 +101,7 @@ main.secundaria {
   gap: 2rem;
 }
 
+/* Texto da seção */
 .texto-sobre {
   flex: 1;
   color: #ccc;
@@ -107,6 +116,27 @@ main.secundaria {
 .texto-sobre p {
   font-size: 1.2rem;
   line-height: 1.6;
+}
+
+/* Classe específica para ajustar apenas o parágrafo do portfólio */
+.paragrafo-portfolio {
+  margin-top: -30px;
+}
+
+/* Imagem à direita da seção */
+.imagem-sobre {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.imagem-sobre img {
+  width: 300px;
+  max-width: 100%;
+  border-radius: 20px;
+  border: 3px solid #00c0ff;
+  box-shadow: 0 0 15px #00c0ff;
+  height: auto;
 }
 
 /* Rodapé */
@@ -125,24 +155,29 @@ footer .container {
   padding: 0 1rem;
 }
 
+/* Cor azul personalizada */
 .azul {
   color: #00c0ff;
 }
 
-.logo {
+/* Redes sociais */
+.redes-sociais {
   display: flex;
-  align-items: center;
-  gap: 10px; /* espaço entre imagem e texto */
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2rem auto -1rem;
 }
 
-.logo img {
-  width: 40px;   /* tamanho pequeno */
-  height: 40px;  /* tamanho pequeno */
-  object-fit: contain;
+.botao-social {
+  background-color: #00c0ff;
+  color: #000;
+  text-decoration: none;
+  padding: 0.7rem 1.4rem;
+  border-radius: 12px;
+  font-weight: bold;
+  transition: background-color 0.3s;
 }
 
-.logo h1 {
-  color: #00c0ff;
-  font-size: 1.6rem;
-  margin: 0; /* remove margem padrão para evitar deslocamento */
+.botao-social:hover {
+  background-color: #00a6dd;
 }
