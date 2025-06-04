@@ -48,5 +48,9 @@
 }
 
 .paragrafo-portfolio {
-  margin-top: -30px; /* Ajuste a altura conforme necessário */
+  margin-top: -100px; /* Ajuste a altura conforme necessário */
+}
+
+.texto-sobre{
+  margin-top: -110px;
 }
