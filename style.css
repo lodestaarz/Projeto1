@@ -19,10 +19,6 @@ body {
   min-height: 100vh;
 }
 
-.logo h1 {
-  color: white;
-}
-
 /* Cabeçalho */
 .principal {
   background: linear-gradient(to bottom, #001f3f, #003366);
@@ -40,6 +36,27 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+}
+
+/* Logo com imagem e texto alinhados */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo img {
+  width: 40px;
+  height: auto;
+  opacity: 1;
+  position: static;
+  transform: none;
+  z-index: auto;
+}
+
+.logo h1 {
+  color: white;
+  font-size: 1.5rem;
 }
 
 /* Botões do menu */
@@ -71,7 +88,7 @@ main.secundaria {
   align-items: center;
 }
 
-/* Seção sobre com texto à esquerda e imagem à direita */
+/* Seção sobre */
 .sobre {
   max-width: 1200px;
   width: 100%;
@@ -82,7 +99,6 @@ main.secundaria {
   gap: 2rem;
 }
 
-/* Texto da seção */
 .texto-sobre {
   flex: 1;
   color: #ccc;
@@ -99,12 +115,10 @@ main.secundaria {
   line-height: 1.6;
 }
 
-/* Classe específica para ajustar apenas o parágrafo do portfólio */
 .paragrafo-portfolio {
   margin-top: -30px;
 }
 
-/* Imagem à direita da seção */
 .imagem-sobre {
   flex: 1;
   display: flex;
@@ -136,11 +150,11 @@ footer .container {
   padding: 0 1rem;
 }
 
-/* Cor azul personalizada */
 .azul {
   color: #00c0ff;
 }
 
+/* Botões finais */
 .botoes-finais {
   display: flex;
   justify-content: center;
@@ -160,24 +174,4 @@ footer .container {
 
 .botao-final:hover {
   background-color: #009ccd;
-}  
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.logo img {
-  width: 40px; /* tamanho menor */
-  height: auto;
-  opacity: 1; /* visível normalmente */
-  position: static; /* remove posicionamento absoluto */
-  transform: none;
-  z-index: auto;
-}
-
-.logo h1 {
-  color: white;
-  font-size: 1.5rem;
 }
