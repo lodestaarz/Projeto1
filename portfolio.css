@@ -46,3 +46,7 @@
   color: #ccc;
   font-size: 0.95rem;
 }
+
+body.portfolio main.secundaria {
+  padding-top: 1rem; /* ou o valor desejado */
+}
