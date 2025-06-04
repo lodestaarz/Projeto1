@@ -129,3 +129,20 @@ footer .container {
   color: #00c0ff;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* espaço entre imagem e texto */
+}
+
+.logo img {
+  width: 40px;   /* tamanho pequeno */
+  height: 40px;  /* tamanho pequeno */
+  object-fit: contain;
+}
+
+.logo h1 {
+  color: #00c0ff;
+  font-size: 1.6rem;
+  margin: 0; /* remove margem padrão para evitar deslocamento */
+}
