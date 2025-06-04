@@ -162,26 +162,3 @@ footer .container {
   background-color: #009ccd;
 }  
 
-.logo {
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.logo img {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 60px;
-  height: auto;
-  opacity: 0.15;
-  z-index: 0;
-}
-
-.logo h1 {
-  position: relative;
-  z-index: 1;
-  color: white;
-}
