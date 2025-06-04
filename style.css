@@ -120,6 +120,30 @@ main.secundaria {
   height: 250px;
 }
 
+/* Botões finais */
+.botoes-finais {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 3rem 0 2rem;
+}
+
+.botao-final {
+  background-color: #00c0ff;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 0 10px rgba(0, 192, 255, 0.4);
+}
+
+.botao-final:hover {
+  background-color: #009ccd;
+  transform: scale(1.05);
+}
+
 /* Rodapé */
 footer {
   background-color: #001f3f;
@@ -141,24 +165,27 @@ footer .container {
   color: #00c0ff;
 }
 
-.botoes-finais {
+/* Estilo para o logo */
+.logo {
+  position: relative;
   display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  margin: 2rem 0;
+  align-items: center;
+  gap: 1rem;
 }
 
-.botao-final {
-  background-color: #00c0ff;
-  color: #000;
-  padding: 0.8rem 1.5rem;
-  border-radius: 10px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s;
+.logo img {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60px;
+  height: auto;
+  opacity: 0.15;
+  z-index: 0;
 }
 
-.botao-final:hover {
-  background-color: #009ccd;
-}  
-
+.logo h1 {
+  position: relative;
+  z-index: 1;
+  color: white;
+}
