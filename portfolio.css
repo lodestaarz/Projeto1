@@ -8,10 +8,8 @@
 }
 
 .secundaria .texto-sobre {
-  margin-top: 0;       /* remove espaçamento automático */
-  padding-top: 1rem;   /* aproxima mais do topo */
+  margin-top: -2rem;
 }
-
 .card {
   background-color: #111;
   padding: 1.5rem;
