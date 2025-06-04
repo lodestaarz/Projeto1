@@ -7,22 +7,14 @@
   justify-content: center;
 }
 
-.secundaria .texto-sobre {
-  margin-top: -2rem;
-}
 .card {
   background-color: #111;
   padding: 1.5rem;
   border-radius: 15px;
   text-align: center;
   width: 200px;
-  height: 280px; /* altura padronizada */
   box-shadow: 0 0 15px #00c0ff33;
   transition: transform 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .card:hover {
@@ -31,8 +23,7 @@
 
 .card img {
   width: 100px;
-  height: 100px; /* força imagem a ter altura fixa */
-  object-fit: contain; /* mantém proporção sem cortar */
+  height: auto;
   border-radius: 12px;
   margin-bottom: 1rem;
 }
@@ -45,12 +36,4 @@
 .card p {
   color: #ccc;
   font-size: 0.95rem;
-}
-
-.paragrafo-portfolio {
-  margin-top: -100px; /* Ajuste a altura conforme necessário */
-}
-
-.texto-sobre{
-  margin-top: -110px;
 }
